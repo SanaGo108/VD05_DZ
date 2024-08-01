@@ -9,34 +9,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Наша компания</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">О нас</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Наша компания</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('home') }}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about') }}">О нас</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <main class="container mt-4">
+</header>
 
-        {% block content %}
 
-        Наша компания специализируется на предоставлении
-                        высококачественной продукции и услуг нашим клиентам. Мы гордимся нашей
-                        приверженностью к совершенству и удовлетворению потребностей клиентов.
-        
-        {% endblock %}
-
+     <main class="container mt-4">
+        <div>
+            Наша компания специализируется на предоставлении высококачественной продукции
+            и услуг нашим клиентам. Мы гордимся нашей приверженностью к совершенству и
+            удовлетворению потребностей клиентов.
+        </div>
     </main>
 
     <footer class="bg-light text-center text-lg-start mt-4">
@@ -55,10 +53,10 @@
                     <h5 class="text-uppercase">Разделы</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="home.html" class="text-dark">Главная</a>
+                            <a href="/home.html" class="text-dark">Главная</a>
                         </li>
                         <li>
-                            <a href="about.html" class="text-dark">О нас</a>
+                            <a href="/about.html" class="text-dark">О нас</a>
                         </li>
                     </ul>
                 </div>

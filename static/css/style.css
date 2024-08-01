@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #DB7093; /* Розовый фон */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white; /* Белый текст */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: #C5628C; /* Темно-розовый фон при наведении */
+}
